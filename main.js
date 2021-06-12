@@ -13,7 +13,7 @@ const getFile = fileName => {
     // Read in raw jokes text
     const jokesText = fs.readFileSync(fileName, 'utf8')
     // Remove padding and number from jokes
-    return jokesText.split('\n').map((joke) => joke.substring(7))
+    return jokesText.split('\n')
     
 }
 
